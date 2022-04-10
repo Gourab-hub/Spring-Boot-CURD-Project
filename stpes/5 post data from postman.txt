@@ -1,3 +1,9 @@
+1.
+
+
+demo\src\main\java\com\example\demo\controller\courseController.java
+
+
 package com.example.demo.controller;
 
 import java.util.ArrayList;
@@ -28,7 +34,7 @@ public class courseController {
         return allcourse;
     }
 
-
+*******************
     @PostMapping("/postcourse")
     public List<Course> postCourse(@RequestBody Course course) {
         allcourse.add(course);
