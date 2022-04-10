@@ -1,0 +1,5 @@
+1. ctrl+shipt+p
+2. C:\Users\Gourab\OneDrive\Desktop\Spring boot\curdproject\src\main\java\com\curd\curdproject\CurdprojectApplication.java ---run
+
+
+
