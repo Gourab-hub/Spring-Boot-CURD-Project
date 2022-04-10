@@ -27,6 +27,8 @@ public class Course {
         this.courseName = courseName;
         this.courseInstrucror = courseInstrucror;
     }
+    public Course() {
+    }
     @Override
     public String toString() {
         return "Course [courseId=" + courseId + ", courseInstrucror=" + courseInstrucror + ", courseName=" + courseName
