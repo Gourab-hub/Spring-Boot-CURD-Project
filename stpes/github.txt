@@ -1,10 +1,11 @@
 echo "# Spring-Boot-CURD-Project" >> README.md
 git init
 git add .
-git commit -m "Create Spring Project and Run"
+git commit -m "Hello world"
 git branch -M main
 git remote add origin https://github.com/Gourab-hub/Spring-Boot-CURD-Project.git
 git push -u origin main
+
 
 
 
