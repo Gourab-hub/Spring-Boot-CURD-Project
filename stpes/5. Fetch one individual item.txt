@@ -1,3 +1,13 @@
+1.
+
+
+demo\src\main\java\com\example\demo\controller\courseController.java
+
+
+
+
+
+
 package com.example.demo.controller;
 
 import java.util.ArrayList;
@@ -29,6 +39,8 @@ public class courseController {
         return allcourse;
     }
 
+
+*******************
     //courses/2
     @GetMapping("/courses/{cid}")
     public Course singleCourse(@PathVariable("cid") Integer courseId) {
@@ -51,3 +63,7 @@ public class courseController {
 
     
 }
+
+
+
+
