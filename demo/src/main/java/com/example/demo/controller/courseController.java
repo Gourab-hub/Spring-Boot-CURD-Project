@@ -32,9 +32,15 @@ public class courseController {
     }
 
     @PostMapping("/postcourse")
-    public List<Course> postCourse(@RequestBody Course course) {
+    public List<Course> postCourse(@RequestBody Course course) throws Exception {
 
-        return courseServices.postCourse(course);
+        try {
+            return courseServices.postCourse(course);
+        } catch (Exception e) {
+            throw new ResponseStatusException(HttpStatus.UNPROCESSABLE_ENTITY,e.getMessage());
+        }
+
+        
     }
 
     // courses/2

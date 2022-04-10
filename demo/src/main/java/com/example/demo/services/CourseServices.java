@@ -25,7 +25,16 @@ public class CourseServices {
         return allcourse;
     }
 
-    public List<Course> postCourse(Course course) {
+    public List<Course> postCourse(Course course) throws Exception {
+
+        Optional<Course> singleCourse = allcourse.stream()
+                .filter(c -> course.getCourseId().equals(c.getCourseId()))
+                .findAny();
+
+        if (singleCourse.isPresent()) {
+            throw new Exception("Course with this ID alewady exist...");
+        }
+
         allcourse.add(course);
         return allcourse;
     }
